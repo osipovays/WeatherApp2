@@ -7,8 +7,6 @@ import com.osipsen.weather.fragments.BlankFragment
 
 
 class MainActivity : AppCompatActivity(){
-    private var layoutManager: RecyclerView.LayoutManager?=null
-    private var adapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>?=null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

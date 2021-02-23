@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.RecyclerView
 import com.osipsen.weather.fragments.BlankFragment
 import com.osipsen.weather.fragments.BlankFragment2
@@ -20,7 +21,6 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
     val API: String = "e9f27d7a3f85307ad5fe961b8d4509ff"
     private var titles = arrayOf("Якутск", "Москва", "Санкт-Петербург")
     private var CITYS = arrayOf("yakutsk,ru", "moscow,ru", "Saint%20Petersburg,ru")
-    var fragLoad = false
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.card_layout, parent,false)

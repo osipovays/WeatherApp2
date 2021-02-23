@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.activity.OnBackPressedCallback
+import androidx.fragment.app.FragmentManager
 import com.osipsen.weather.R
 import org.json.JSONObject
 import java.net.URL
@@ -37,6 +39,7 @@ class BlankFragment2 : Fragment() {
         weatherTask().execute()
 
 
+
         // Inflate the layout for this fragment
         return rootView
     }
@@ -54,6 +57,8 @@ class BlankFragment2 : Fragment() {
     }
 
     override fun onPause() {
+
+        activity!!.supportFragmentManager.popBackStack()
         super.onPause()
     }
 
