@@ -52,7 +52,6 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
             itemView.setOnClickListener{
                 val activity = itemView.context as AppCompatActivity
                 val fragmentA = BlankFragment2()
-                val fragmentB = BlankFragment()
                 val bundle = Bundle()
                 bundle.putString("CITYS",CITYS[position])
                 bundle.putString("city",city[position])
