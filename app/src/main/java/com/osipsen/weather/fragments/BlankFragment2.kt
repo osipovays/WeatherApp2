@@ -36,12 +36,6 @@ class BlankFragment2 : Fragment() {
         return rootView
     }
 
-    override fun onPause() {
-
-        activity!!.supportFragmentManager.popBackStack()
-        super.onPause()
-    }
-
 
     @SuppressLint("StaticFieldLeak")
     inner class weatherTask : AsyncTask<String, Void, String>() {
