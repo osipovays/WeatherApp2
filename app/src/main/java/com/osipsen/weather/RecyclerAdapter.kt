@@ -56,7 +56,7 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
                 bundle.putString("CITYS",CITYS[position])
                 bundle.putString("city",city[position])
                 fragmentA.arguments = bundle
-                activity.supportFragmentManager.beginTransaction().add(R.id.fragment_cont, fragmentA).addToBackStack(null).commit()
+                activity.supportFragmentManager.beginTransaction().replace(R.id.fragment_cont, fragmentA).addToBackStack(null).commit()
             }
         }
     }
